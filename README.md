@@ -13,4 +13,4 @@ Generation 61 | Generation 81 | Generation 101
 ### Learn curve
 Average (calculated from 50 intependend board configurations) number of the cans that was picked by the best robot in subsequent generations:
 
-![](https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/learn_curve.png)
+![](https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/learn_curve.png)
