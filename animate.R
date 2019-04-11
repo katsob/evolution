@@ -11,12 +11,9 @@ args = commandArgs(trailingOnly=TRUE)
 evolution_dir <- args[1]
 epoch_nr <- args[2]
 
-# evolution_dir <- '2019-04-11T19:50:07'
-# epoch_nr <- '1'
-
 anim_dir <- sprintf('%s/animations', evolution_dir)
-board <- read.csv(file.path(evolution_dir, sprintf('epoch%s_board.csv', epoch_nr)), header=TRUE)
-path <- read.csv(file.path(evolution_dir, sprintf('epoch%s_path.csv', epoch_nr)), header=FALSE)
+board <- read.csv(file.path(evolution_dir, sprintf('epoch%s_board.csv', epoch_nr)), header = TRUE)
+path <- read.csv(file.path(evolution_dir, sprintf('epoch%s_path.csv', epoch_nr)), header = FALSE)
 if(!dir.exists(anim_dir))
     dir.create(anim_dir)
 
@@ -32,7 +29,8 @@ ggplot() +
     theme(legend.position = 'none', 
           axis.ticks=element_blank(), 
           axis.text.x = element_blank(),
-          axis.text.y = element_blank())  +
+          axis.text.y = element_blank(),
+          plot.title = element_text(face = "bold", size=20))  +
     transition_time(step) +
     ease_aes('linear', interval=.001) -> anim
 anim
