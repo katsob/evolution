@@ -9,8 +9,10 @@ data <- dplyr::bind_rows(data, .id='params')
 
 ggplot(data) + 
     geom_line(aes(x=generation, y=cans, color=params, group=params)) +
-    theme(legend.position = c(.75,.25), 
-          legend.background = element_rect(fill=alpha('white',0.4))) 
+    theme(legend.position = c(.85,.25), 
+          legend.background = element_rect(fill=alpha('white',0.4))) +
+    scale_y_continuous(breaks = pretty(data$cans, n = 12)) +
+    scale_x_continuous(breaks = pretty(data$generation, n = 20))
 
-ggsave('learning_curves.png', dpi=100, width=10, height = 6)
+ggsave('learning_curves.png', dpi=100, width=10, height = 5)
 
