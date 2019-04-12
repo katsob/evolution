@@ -3,16 +3,19 @@ from time import gmtime, strftime
 import os
 import copy
 import random
+import argparse
+
 from utils import Board, RandomRobot
 
 
 class Evolution:
-    def __init__(self, population_size = 40, n_boards = 100, mess = .05):
+    def __init__(self, population_size = 40, n_boards = 100, mess = .05, steps=50):
         self.population_size = population_size
+        self.steps = steps
         self.n_boards = n_boards
         self.mess = mess
         self.init_generation = [ RandomRobot() for i in range(population_size)]
-        self.name = strftime("%Y-%m-%dT%H:%M:%S", gmtime())
+        self.name = strftime("%Y-%m-%dT%H:%M:%S", gmtime()) + 'steps=%i_mess_perc=%i' % (self.steps, self.mess*100)
         if not os.path.exists(self.name):
             os.mkdir(self.name)
         with open(self.name + '/learn_curve.csv', 'w') as fp:
@@ -25,7 +28,7 @@ class Evolution:
             r_bag = 0
             for i in range(self.n_boards):
                 b = Board()
-                r_bag += r.run(b)
+                r_bag += r.run(b, N = self.steps)
             robot_cans.append((r, float(r_bag)/self.n_boards))
         robot_cans.sort(key=lambda x: x[1], reverse=True)
         return robot_cans[:5]
@@ -69,6 +72,11 @@ class Evolution:
     
 
 if __name__ == '__main__':
-    n = sys.argv[1]
-    e1 = Evolution()
-    e1.evaluate(int(n))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--steps', '-s', help="number of steps on the boards", type= int, default=50)
+    parser.add_argument('--mess', '-m', help="fraction of muttations", type= float, default=0.05)
+    parser.add_argument('--n_epochs', '-n', help="number of generations", type= int, default=500)
+    args = parser.parse_args()
+
+    e1 = Evolution(steps=args.steps, mess = args.mess)
+    e1.evaluate(args.n_epochs)
