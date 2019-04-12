@@ -50,12 +50,15 @@ Average number of the cans that was picked by the best robot in subsequent gener
 * What the performance will be with different type of mutation (deletions)
 
 
-### 75 steps
-
-Generation 1 | Generation 21 | Generation 41
-:--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch41.gif" width="300"  />
+### When robot has 75 steps to use
 
 Generation 101 | Generation 201  | Generation 281
 :--------------------:|:--------------------:|:--------------------:
 <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch201.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch281.gif" width="300"  />
+
+
+### When robot has 99 steps to use
+
+Generation 101 | Generation 201  | Generation 281
+:--------------------:|:--------------------:|:--------------------:
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T18:50:14steps=99_mess_perc=3/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T18:50:14steps=99_mess_perc=3/animations/epoch201.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T18:50:14steps=99_mess_perc=3/animations/epoch281.gif" width="300"  />
