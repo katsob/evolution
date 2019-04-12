@@ -1,25 +1,24 @@
 # Genetic Algorithm in action
 
 
-
 Generation 1 | Generation 21 | Generation 41
 :--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch41.gif" width="300"  />
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch41.gif" width="300"  />
 
-Generation 101 | Generation 281  | Generation 521
+Generation 101 | Generation 201  | Generation 281
 :--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch281.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch521.gif" width="300"  />
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch201.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch281.gif" width="300"  />
 
-### Learning curve
-Average number of the cans that was picked by the best robot in subsequent generations:
+### Learning curves
+Average number of the cans that was picked by the best robot in subsequent generations (plotted by different parameters)
 
-![](https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/learn_curve.png)
+![](https://raw.githubusercontent.com/katsob/evolution/master/learning_curves.png)
 
 ### Assumptions
 
 * 1000 generations was trained.
 * There is population of `40` robots in each generation.
-* Each robot goes on `100` different boards.
+* Each robot goes on `100` different boards and can do only `steps=50`.
 * Each board contains 15 randomly distributed cans.
 * Measure of success: mean number of collected cans (calculated over all different boards).
 * `5` best robots was selected in each generation. Those robots were reproducted (`8` times each) to obtain new generation of `40` robots.
@@ -34,7 +33,7 @@ Average number of the cans that was picked by the best robot in subsequent gener
  (1,1,0,0,0)|P
  ]
 ```
-* _reproduction_ - means that each of 5 best robots is cloned 8 times with small mutations in cloned chromosome. Fraction of mutation is given as parameter `mess = 0.05`. 
+* _reproduction_ - means that each of 5 best robots is cloned 8 times with small mutations in cloned chromosome. Fraction of mutation is given as parameter i.e. `mess = 0.05`. 
 
 
 ### Hyperparameters to fun with:
@@ -42,5 +41,21 @@ Average number of the cans that was picked by the best robot in subsequent gener
 * `population_size = 40` - number of robots in each generation,
 * `n_boards = 100` - number of boards to passed by each robot.
 * `mess = .05` - mutations in chromosome.
+* `steps = 50` - number of steps.
+
+### Additional questions to solve
+
+* Probability of picking `p` out of total `k=15` cans from the board having `n` possible steps to do.
+* Is GA better then random walking? How much better?
+* What the performance will be with different type of mutation (deletions)
 
 
+### 75 steps
+
+Generation 1 | Generation 21 | Generation 41
+:--------------------:|:--------------------:|:--------------------:
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch41.gif" width="300"  />
+
+Generation 101 | Generation 201  | Generation 281
+:--------------------:|:--------------------:|:--------------------:
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch201.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch281.gif" width="300"  />
