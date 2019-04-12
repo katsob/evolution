@@ -3,7 +3,7 @@
 
 Generation 1 | Generation 21 | Generation 41
 :--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch41.gif" width="300"  />
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:04:13steps=50_mess_perc=3/animations/epoch41.gif" width="300"  />
 
 Generation 101 | Generation 201  | Generation 281
 :--------------------:|:--------------------:|:--------------------:
@@ -33,7 +33,7 @@ Average number of the cans that was picked by the best robot in subsequent gener
  (1,1,0,0,0)|P
  ]
 ```
-* _reproduction_ - means that each of 5 best robots is cloned 8 times with small mutations in cloned chromosome. Fraction of mutation is given as parameter i.e. `mess = 0.05`. 
+* _reproduction_ - means that each of 5 best robots is cloned 8 times with small chromosome mutations. Fraction of mutation is given as a parameter i.e. `mess = 0.05`. 
 
 
 ### Hyperparameters to fun with:
@@ -54,7 +54,7 @@ Average number of the cans that was picked by the best robot in subsequent gener
 
 Generation 1 | Generation 21 | Generation 41
 :--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch41.gif" width="300"  />
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch1.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch21.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-12T15:13:01steps=75_mess_perc=3/animations/epoch41.gif" width="300"  />
 
 Generation 101 | Generation 201  | Generation 281
 :--------------------:|:--------------------:|:--------------------:
