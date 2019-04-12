@@ -1,4 +1,4 @@
-#Genetic Algorithm in action
+# Genetic Algorithm in action
 
 
 
@@ -8,7 +8,7 @@ Generation 1 | Generation 21 | Generation 41
 
 Generation 101 | Generation 281  | Generation 521
 :--------------------:|:--------------------:|:--------------------:
-<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/281.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch521.gif" width="300"  />
+<img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch101.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch281.gif" width="300"  /> | <img alt='a' src="https://raw.githubusercontent.com/katsob/evolution/master/2019-04-11T20%3A52%3A15/animations/epoch521.gif" width="300"  />
 
 ### Learning curve
 Average number of the cans that was picked by the best robot in subsequent generations:
